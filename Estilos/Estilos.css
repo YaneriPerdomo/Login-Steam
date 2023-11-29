@@ -115,3 +115,7 @@ header{
     padding: 2rem;
     border-radius: 2rem;
   }
+
+  label:last-child{
+    cursor: pointer;
+  }

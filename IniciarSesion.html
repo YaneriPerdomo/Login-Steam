@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   
   <link rel="stylesheet" href="Estilos/Estilos.css">
+  <style>
+    .body-main {
+      height: 20rem;
+    }
 
+    @media (max-width: 768px) { 
+      .fondo-login {
+        width: 100% !important;
+      }
+      }
+
+  </style>
 </head>
   <body class="bg-dark">
 
@@ -48,42 +59,67 @@
 
     <br><br><br><br><br>
   
-    <div class="container-xxl fondo-login  ">
-      <div class="d-flex justify-content-center">
-          <div class="ms-1 me-1 row w-100   ">
-              <div class="col-12 col-lg-6   ">
-                  <h1 class="fw-normal text-white"> Crear una nueva cuenta</h1>
-                  <br>
-                  <label for="" class="">Dirección de correo electrónico</label><br>
+    <div class="container-xxl main ">
+      <div class="w-100 text-center ">
+        <h1 class="fw-bold text-white"> Crear una nueva cuenta</h1>                
+      </div>
+      <div class="d-flex justify-content-center body-main flex-wrap ">
+          <div class="ms-1 me-1 row w-75 fondo-login  ">
+              <div class="col-lg-7 col-12   ">
+                   <br>
+                  <label for="" class="text-primary"> INICIAR SESION CON TU NOMBRE DE CUENTA</label><br>
                   <input type="text" class="rounded-2 border-1 ">
                   <br><br>
-                  <label for="" class="">Confirma tu dirección</label><br>
-                  <input type="text" class="rounded-2 border-1 ">
+                  <label for="" class="">CONTRASEÑA</label><br>
+                  <input type="text" class="rounded-2 border-1 ">                
                   <br><br>
-                  <label for="" class="">País de residencia</label><br>
-                  <select name="" id="" class=" rounded-2 border-1 ">
-                      <option selected class="">Venezuela</option>
-                      <option value="Colombia">Colombia</option>
-                      <option value="Argentina">Argentina</option>
-                  </select>
-                  <br><br>
-                  <div class="form-check">
+                  <div class="form-check ">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label " for="defaultCheck1">
-                          Tengo 13 años o más y acepto los términos del <a href="" class="text-decoration-none text-white"> Acuerdo de Suscriptor a Steam </a>y la  <a href="" class="text-white text-decoration-none">Política de Privacidad de Valve.</a>
-                      </label>
+                      <label class="form-check-label " for="defaultCheck1" title="La primera vez que abras steam no necesitaras escribir contraseña ni confirmar el inicio de sesion">
+                          Recordame </label>
                   </div>
                   <br>
+                  
                   <button type="button" class="w-auto">Continuar</button>
+                  <div><br>
+                    <a href="" class="text-white"> 
+                      Ayuda, no puedo iniciar sesión</a>
+                  </div>
               </div>
-              <div class="col-4 col-lg-12  ">
-              </div>  
+              <div class="col-lg-5 col-12  ">
+                <br>
+                <label for="" class="text-primary"> O BIEN CON UN CÒDIGO QR</label><br>
+                <div class="w-50">
+                  <img src="R.jpg" class="img-fluid rounded-2 mt-2 mb-2 w-75" alt="">
+                </div>
+                <span>Usa <a href="" class="text-light">la aplicación Steam Mobile </a> para iniciar sesión con un código QR
+                </span>
+              </div>
+            
           </div>
       </div>
     </div>
+ 
     <br><br><br><br><br><br><br><br><br><br>
+
     <footer>
+     
       <div class="container-xl  d-none d-lg-block">
+        <div class="text-center">
+          <div class="row  " >
+            <div class="col-2"></div>
+            <div class="col-4">
+              <span class="fw-bold text-white fs-4">¿Tu primera vez en Steam? </span>
+              <br><br><br>
+              <a href="index.html"> <button type="button" class="w-auto">Crear una cuenta</button></a>
+              
+            </div>
+            <div class="col-4">
+              <p>Es gratis y muy fácil. Descubre miles de juegos para jugar con millones de amigos nuevos. Más información acerca de Steam</p>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div><br><br><br><br><br>
         <hr>
         <div class="d-flex justify-content-between">
           <div> 
